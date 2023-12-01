@@ -1,0 +1,170 @@
+{
+    "email" : {
+        "fields":{
+            "subject" : "I am not a Bot",
+            "body" : "I am not a bot, please unblock me."
+        }
+    },
+    "text_captcha": {
+        "background": {
+            "bgColor": "#ffffff",
+            "image": ""
+        },
+        "reloadButton": {
+          "icon" : "default"
+        },
+        "submitButton": {
+            "text": "Submit",
+            "bgColor": "#026749",
+            "textColor": "#ffffff",
+            "textAlign": "center",
+            "fontSize": 15,
+            "fontName": "HelveticaNeue"
+        },
+        "labelStatus": {
+            "text": "Please enter captcha!",
+            "textColor": "#ff0000",
+            "textAlign": "center",
+            "fontSize": 15,
+            "fontName": "HelveticaNeue"
+        },
+        "labelMismatch": {
+            "text": "Captcha mismatch!",
+            "textColor": "#ff0000",
+            "textAlign": "center",
+            "fontSize": 15,
+            "fontName": "HelveticaNeue"
+        },
+        "textLabel": {
+            "text": "Simply enter the characters above into the box below and tap SUBMIT. (Case-Insensitive)",
+            "textColor": "#000000",
+            "textAlign": "left",
+            "fontSize": 14,
+            "fontName": "HelveticaNeue"
+        },
+        "captcha": {
+            "bgColor": "#007158",
+            "textColor": "#ffffff"
+        }
+    },
+    "checkbox_captcha": {
+        "background": {
+            "bgColor": "#ffffff",
+            "image": ""
+        },
+        "submitButton": {
+            "text": "Submit",
+            "bgColor": "#026749",
+            "textColor": "#ffffff",
+            "textAlign": "center",
+            "fontSize": 15,
+            "fontName": "HelveticaNeue"
+        },
+        "textLabel": {
+            "text": "I Am Human",
+            "textColor": "#000000",
+            "textAlign": "left",
+            "fontSize": 16,
+            "fontName": "HelveticaNeue",
+        },
+        "labelStatus": {
+            "text": "Please click on check box",
+            "textColor": "#ff0000",
+            "textAlign": "center",
+            "fontSize": 14,
+            "fontName": "HelveticaNeue",
+        }
+    },
+    "captcha_screen" : {
+        "logoImage" : {
+            "url": "default"
+        },
+        "digest": {
+            "show": "yes"
+        },
+        "background": {
+            "bgColor": "#ffffff",
+            "image": ""
+        },
+        "btnVerify": {
+            "text": "I am human",
+            "textColor": "#ffffff",
+            "bgColor": "#007158",
+            "fontSize": 22,
+            "fontName": "HelveticaNeue",
+            "textAlign": "center"
+        },
+        "btnContact": {
+            "text": "Contact Us",
+            "textColor": "#ffffff",
+            "bgColor": "#A52643",
+            "fontSize": 14,
+            "textAlign": "center",
+            "fontName": "HelveticaNeue"
+        },
+        "labelTitle": {
+            "text": "Pardon the interruption!",
+            "textColor": "#000000",
+            "fontSize": 25,
+            "fontName": "Helvetica Neue Bold",
+            "textAlign": "center",
+        },
+        "labelDescription": {
+            "text": "We noticed some unusual activity and wanted to make sure you are not a robot.",
+            "textColor": "#000000",
+            "fontSize": 16,
+            "textAlign": "left",
+            "fontName": "Helvetica Neue",
+        },
+        "labelDigest": {
+            "textColor": "#000000",
+            "fontSize": 14,
+            "fontName": "Helvetica Neue Bold",
+        },
+    },
+    "block_screen" : {
+        "logoImage" : {
+            "url": "default"
+        },
+        "background": {
+            "bgColor": "#ffffff",
+            "image": ""
+        },
+        "digest": {
+            "show": "yes"
+        },
+        "btnContact": {
+            "text": "Contact Us",
+            "textColor": "#ffffff",
+            "bgColor": "#007158",
+            "fontSize": 16,
+            "textAlign": "center",
+            "fontName": "HelveticaNeue"
+        },
+        "labelTitle": {
+            "text": "We apologize for the inconvenience...",
+            "textColor": "#000000",
+            "fontSize": 25,
+            "fontName": "Helvetica Neue Bold",
+            "textAlign": "center",
+        },
+        "labelDescription": {
+            "text": "To protect this application, we cannot process your request right now\n\nIf you think this is an error, please contact us.",
+            "textColor": "#000000",
+            "fontSize": 16,
+            "textAlign": "left",
+            "fontName": "Helvetica Neue",
+        },
+        "labelDigest": {
+            "textColor": "#000000",
+            "fontSize": 14,
+            "fontName": "Helvetica Neue Bold",
+            "textAlign": "center",
+        }
+    }
+    
+}
+
+
+
+

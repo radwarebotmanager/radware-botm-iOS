@@ -1,0 +1,11 @@
+framework module ShieldSquare {
+  umbrella header "ShieldSquare.h"
+
+  export *
+  module * { export * }
+}
+
+module ShieldSquare.Swift {
+  header "ShieldSquare-Swift.h"
+  requires objc
+}

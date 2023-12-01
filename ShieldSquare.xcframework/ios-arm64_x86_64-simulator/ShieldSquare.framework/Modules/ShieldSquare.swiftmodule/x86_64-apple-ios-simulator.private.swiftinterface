@@ -1,0 +1,588 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShieldSquare
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVFoundation
+import SystemConfiguration.CaptiveNetwork
+import CommonCrypto
+import CoreMotion
+import CoreTelephony
+import CryptoKit
+import DeviceCheck
+import ExternalAccessory
+import Foundation
+import MessageUI
+@_exported import ShieldSquare
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+public enum SSDeviceType : Swift.String {
+  case unknown
+  case iPodTouch5
+  case iPodTouch6
+  case iPhone4
+  case iPhone4s
+  case iPhone5
+  case iPhone5c
+  case iPhone5s
+  case iPhone6
+  case iPhone6Plus
+  case iPhone6s
+  case iPhone6sPlus
+  case iPhoneSE
+  case iPhone7
+  case iPhone7Plus
+  case iPhone8
+  case iPhone8Plus
+  case iPhoneX
+  case iPad2
+  case iPad3
+  case iPad4
+  case iPadAir
+  case iPadAir2
+  case iPad5
+  case iPadMini
+  case iPadMini2
+  case iPadMini3
+  case iPadMini4
+  case iPadPro
+  case simulator
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SSDeviceSize : Swift.String {
+  case screenUnknown
+  case screen4Inches
+  case screen4Dot7Inches
+  case screen5Dot5Inches
+  case screen5Dot8Inches
+  case screen7Dot9Inches
+  case screen9Dot7Inches
+  case screen12Dot9Inches
+  case screen10Dot5Inches
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SSDeviceConnectivity : Swift.String {
+  case unknown
+  case wiFi
+  case wiFi3G
+  case wiFi4G
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SSDevice {
+  public var identifier: Swift.String {
+    get
+  }
+  public var type: ShieldSquare.SSDeviceType {
+    get
+  }
+  public var model: Swift.String {
+    get
+  }
+  public var size: ShieldSquare.SSDeviceSize {
+    get
+  }
+  public var connectivity: ShieldSquare.SSDeviceConnectivity {
+    get
+  }
+  public var completeName: Swift.String {
+    get
+  }
+  public static var current: ShieldSquare.SSDevice {
+    get
+  }
+}
+extension ShieldSquare.SSDevice : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public enum SSReCaptchaResult {
+  case token(Swift.String)
+  case error(ShieldSquare.SSReCaptchaError)
+  public func dematerialize() throws -> Swift.String
+}
+public enum LMSizeScale {
+  case bytes
+  case kilobytes
+  case megabytes
+  case gigabytes
+  public static func == (a: ShieldSquare.LMSizeScale, b: ShieldSquare.LMSizeScale) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LMBatteryState : Swift.Int {
+  case unknown
+  case unplugged
+  case charging
+  case full
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct SSDeviceInfo {
+  public struct System {
+    public struct Network {
+      public static func getProviderAndNetworkType() -> Swift.String
+      public static func getNetworkType() -> Swift.String
+      public static var isConnectedViaWiFi: Swift.Bool {
+        get
+      }
+      public static var isConnectedViaCellular: Swift.Bool {
+        get
+      }
+      public static var isInternetAvailable: Swift.Bool {
+        get
+      }
+      public static var SSID: Swift.String {
+        get
+      }
+    }
+    public struct Locale {
+      public static var currentLanguage: Swift.String {
+        get
+      }
+      public static var currentTimeZone: Foundation.TimeZone {
+        get
+      }
+      public static var currentTimeZoneName: Swift.String {
+        get
+      }
+      public static var currentCountry: Swift.String {
+        get
+      }
+      public static var currentCurrency: Swift.String? {
+        get
+      }
+      public static var currentCurrencySymbol: Swift.String? {
+        get
+      }
+      public static var usesMetricSystem: Swift.Bool {
+        get
+      }
+      public static var decimalSeparator: Swift.String? {
+        get
+      }
+    }
+    public struct Carrier {
+      public static var name: Swift.String? {
+        get
+      }
+      public static var ISOCountryCode: Swift.String? {
+        get
+      }
+      public static var mobileCountryCode: Swift.String? {
+        get
+      }
+      @available(*, deprecated, message: "Use mobileNetworkCode instead")
+      public static var networkCountryCode: Swift.String? {
+        get
+      }
+      public static var mobileNetworkCode: Swift.String? {
+        get
+      }
+      public static var allowsVOIP: Swift.Bool? {
+        get
+      }
+      public static func checkCallSupport() -> Swift.Bool?
+      public static func checkSmsSupport() -> Swift.Bool?
+    }
+    public struct Hardware {
+      public static var deviceModel: Swift.String {
+        get
+      }
+      public static var processorsNumber: Swift.Int {
+        get
+      }
+      public static var activeProcessorsNumber: Swift.Int {
+        get
+      }
+      public static func physicalMemory(withSizeScale sizeScale: ShieldSquare.LMSizeScale) -> Swift.Float
+      public static var systemName: Swift.String {
+        get
+      }
+      public static var systemVersion: Swift.String {
+        get
+      }
+      public static var bootTime: Foundation.TimeInterval {
+        get
+      }
+      @available(iOS 9.0, *)
+      public static var isLowPowerModeEnabled: Swift.Bool {
+        get
+      }
+      public struct Screen {
+        public static var brightness: Swift.Float {
+          get
+        }
+        public static var isScreenMirrored: Swift.Bool {
+          get
+        }
+        public static var nativeBounds: CoreFoundation.CGRect {
+          get
+        }
+        public static var nativeScale: Swift.Float {
+          get
+        }
+        public static var bounds: CoreFoundation.CGRect {
+          get
+        }
+        public static var scale: Swift.Float {
+          get
+        }
+        public static var snapshotOfCurrentView: UIKit.UIView {
+          get
+        }
+      }
+      public struct Device {
+        public static var current: ShieldSquare.SSDevice {
+          get
+        }
+        public static var identifierForVendor: Swift.String? {
+          get
+        }
+        public static var orientation: UIKit.UIDeviceOrientation {
+          get
+        }
+      }
+      public struct Accessory {
+        public static var count: Swift.Int {
+          get
+        }
+        public static var connectedAccessoriesNames: [Swift.String] {
+          get
+        }
+        public static var connectedAccessories: [ExternalAccessory.EAAccessory] {
+          get
+        }
+        public static var isHeadsetPluggedIn: Swift.Bool {
+          get
+        }
+      }
+      public struct Sensors {
+        public static var isAccelerometerAvailable: Swift.Bool {
+          get
+        }
+        public static var isAccelerometerActive: Swift.Bool {
+          get
+        }
+        public static func setSensorsValues()
+        public static var isGyroAvailable: Swift.Bool {
+          get
+        }
+        public static var isGyroActive: Swift.Bool {
+          get
+        }
+        public static var isMagnetometerAvailable: Swift.Bool {
+          get
+        }
+        public static var isDeviceMotionAvailable: Swift.Bool {
+          get
+        }
+      }
+    }
+    public struct Disk {
+      public static var totalSpace: Swift.String {
+        get
+      }
+      public static var freeSpace: Swift.String {
+        get
+      }
+      public static var usedSpace: Swift.String {
+        get
+      }
+      public static var totalSpaceInBytes: Swift.Int64 {
+        get
+      }
+      public static var freeSpaceInBytes: Swift.Int64 {
+        get
+      }
+      public static var usedSpaceInBytes: Swift.Int64 {
+        get
+      }
+      public static var freeSpaceInPercentage: Swift.Float {
+        get
+      }
+      public static var usedSpaceInPercentage: Swift.Float {
+        get
+      }
+    }
+    public struct Battery {
+      public static var level: Swift.Float? {
+        get
+      }
+      public static var state: ShieldSquare.LMBatteryState {
+        get
+      }
+    }
+    public struct Application {
+      public static var version: Swift.String {
+        get
+      }
+      public static var build: Swift.String {
+        get
+      }
+      public static var completeAppVersion: Swift.String {
+        get
+      }
+      public static var clipboardString: Swift.String? {
+        get
+      }
+    }
+    public struct SDK {
+      public static var version: Swift.String {
+        get
+      }
+      public static var build: Swift.String {
+        get
+      }
+      public static var completeAppVersion: Swift.String {
+        get
+      }
+    }
+  }
+}
+public enum HTTPMethod : Swift.String {
+  case options
+  case get
+  case head
+  case post
+  case put
+  case patch
+  case delete
+  case trace
+  case connect
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ResponseCodes : Swift.Int {
+  case Success, Failed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SSURLProtocol : Foundation.URLProtocol {
+  @objc override dynamic public class func canInit(with request: Foundation.URLRequest) -> Swift.Bool
+  @objc override dynamic public class func canonicalRequest(for request: Foundation.URLRequest) -> Foundation.URLRequest
+  @objc override dynamic public func startLoading()
+  @objc override dynamic public func stopLoading()
+  @objc deinit
+}
+extension ShieldSquare.SSURLProtocol : Foundation.URLSessionDataDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: Swift.Error?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: Swift.Error?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
+}
+infix operator <<< : BitwiseShiftPrecedence
+public enum SSReachabilityError : Swift.Error {
+  case FailedToCreateWithAddress(Darwin.sockaddr_in)
+  case FailedToCreateWithHostname(Swift.String)
+  case UnableToSetCallback
+  case UnableToSetDispatchQueue
+}
+public let SSReachabilityChangedNotification: Foundation.NSNotification.Name
+public class SSReachability {
+  public typealias NetworkReachable = (ShieldSquare.SSReachability) -> ()
+  public typealias NetworkUnreachable = (ShieldSquare.SSReachability) -> ()
+  public enum NetworkStatus : Swift.CustomStringConvertible {
+    case notReachable, reachableViaWiFi, reachableViaWWAN
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: ShieldSquare.SSReachability.NetworkStatus, b: ShieldSquare.SSReachability.NetworkStatus) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: ShieldSquare.SSReachability.NetworkReachable?
+  public var whenUnreachable: ShieldSquare.SSReachability.NetworkUnreachable?
+  public var reachableOnWWAN: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  public var currentReachabilityString: Swift.String {
+    get
+  }
+  public var currentReachabilityStatus: ShieldSquare.SSReachability.NetworkStatus {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability)
+  convenience public init?(hostname: Swift.String)
+  convenience public init?()
+  @objc deinit
+}
+extension ShieldSquare.SSReachability {
+  public func startNotifier() throws
+  public func stopNotifier()
+  public var isReachable: Swift.Bool {
+    get
+  }
+  public var isReachableViaWWAN: Swift.Bool {
+    get
+  }
+  public var isReachableViaWiFi: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+}
+public enum SSReCaptchaError : Swift.Error, Swift.CustomStringConvertible {
+  case unexpected(Swift.Error)
+  case htmlLoadError
+  case apiKeyNotFound
+  case baseURLNotFound
+  case wrongMessageFormat
+  case failedSetup
+  case responseExpired
+  case failedRender
+  public var description: Swift.String {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) public class PopupViewController : UIKit.UIViewController {
+  public enum PopupPosition {
+    case center(CoreFoundation.CGPoint?)
+    case topLeft(CoreFoundation.CGPoint?)
+    case topRight(CoreFoundation.CGPoint?)
+    case bottomLeft(CoreFoundation.CGPoint?)
+    case bottomRight(CoreFoundation.CGPoint?)
+    case top(CoreFoundation.CGFloat)
+    case left(CoreFoundation.CGFloat)
+    case bottom(CoreFoundation.CGFloat)
+    case right(CoreFoundation.CGFloat)
+  }
+  @_Concurrency.MainActor(unsafe) public var popupWidth: CoreFoundation.CGFloat? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var popupHeight: CoreFoundation.CGFloat? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var position: ShieldSquare.PopupViewController.PopupPosition {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var backgroundAlpha: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var backgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var canTapOutsideToDismiss: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var cornerRadius: CoreFoundation.CGFloat
+  @_Concurrency.MainActor(unsafe) public var shadowEnabled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var contentController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(contentController: UIKit.UIViewController, position: ShieldSquare.PopupViewController.PopupPosition = .center(nil), popupWidth: CoreFoundation.CGFloat? = nil, popupHeight: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor(unsafe) public init(contentView: UIKit.UIView, position: ShieldSquare.PopupViewController.PopupPosition = .center(nil), popupWidth: CoreFoundation.CGFloat? = nil, popupHeight: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+extension ShieldSquare.PopupViewController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class SSReCaptcha {
+  public enum Endpoint {
+    case `default`
+    case alternate
+    public static func == (a: ShieldSquare.SSReCaptcha.Endpoint, b: ShieldSquare.SSReCaptcha.Endpoint) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  convenience public init(apiKey: Swift.String? = nil, baseURL: Foundation.URL? = nil, endpoint: ShieldSquare.SSReCaptcha.Endpoint = .default, locale: Foundation.Locale? = nil) throws
+  public func validate(on view: UIKit.UIView, resetOnError: Swift.Bool = false, completion: @escaping (ShieldSquare.SSReCaptchaResult) -> Swift.Void)
+  public func stop()
+  public func configureWebView(_ configure: @escaping (WebKit.WKWebView) -> Swift.Void)
+  public func reset()
+  public func didFinishLoading(_ closure: @escaping (() -> Swift.Void))
+  @objc deinit
+}
+public struct SSEventType {
+  public static let DEFAULT: Swift.Int
+  public static let CUSTOMER: Swift.Int
+}
+@_inheritsConvenienceInitializers @objc public class ShieldEngine : ObjectiveC.NSObject {
+  public struct SSCaptchaViewType {
+    public static let sscheckboxcaptcha: Swift.Int
+    public static let sstextcaptcha: Swift.Int
+    public static let ssrecaptcha: Swift.Int
+  }
+  @objc public static func setup(keyWindow: UIKit.UIWindow, verifyViewType: Swift.Int = ShieldEngine.SSCaptchaViewType.sscheckboxcaptcha)
+  @objc public static func enableSSLogs(enableLogs: Swift.Bool = false)
+  @objc public static func setUserId(userId: Swift.String)
+  public static func makeCalltypeFive()
+  public static func makeCalltypeEight()
+  public func getBlockDigestID() -> Swift.String
+  public func getContactEmail() -> Swift.String
+  public static func trackEvents(eventName: Swift.String?, screenName: Swift.String? = "", eventParams: [Swift.String : Any]? = [:])
+  public static func trackBot(httpResponseObject: Foundation.HTTPURLResponse?)
+  public static func getCaptchaUIViewController() -> UIKit.UIViewController
+  public static func processResponse(httpResponseObject: Foundation.HTTPURLResponse?)
+  public static func setEventsTrackingEnabled(enable: Swift.Bool)
+  public static func updateHeadersFromHttpResponse(httpResponseObject: Foundation.HTTPURLResponse?)
+  public static func setPostUrl(apiUrl: Swift.String)
+  public static func getHeader(fromKey: Swift.String, timestamp: Swift.Int64 = 0) -> Swift.String
+  public static func getUnixTimeStamp() -> Swift.Int64
+  public static func getApiHeaders(requestUrl: Swift.String) -> [Swift.String : Swift.String]
+  public static func logShieldEvents(resultObject: Foundation.HTTPURLResponse?)
+  public static func getCookiesFromResponse() -> [Swift.String : Any]
+  public static func logDebugValues(message: Swift.String?, items: Any?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class ShieldNetworkManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ShieldSquare.SSDeviceType : Swift.Equatable {}
+extension ShieldSquare.SSDeviceType : Swift.Hashable {}
+extension ShieldSquare.SSDeviceType : Swift.RawRepresentable {}
+extension ShieldSquare.SSDeviceSize : Swift.Equatable {}
+extension ShieldSquare.SSDeviceSize : Swift.Hashable {}
+extension ShieldSquare.SSDeviceSize : Swift.RawRepresentable {}
+extension ShieldSquare.SSDeviceConnectivity : Swift.Equatable {}
+extension ShieldSquare.SSDeviceConnectivity : Swift.Hashable {}
+extension ShieldSquare.SSDeviceConnectivity : Swift.RawRepresentable {}
+extension ShieldSquare.LMSizeScale : Swift.Equatable {}
+extension ShieldSquare.LMSizeScale : Swift.Hashable {}
+extension ShieldSquare.LMBatteryState : Swift.Equatable {}
+extension ShieldSquare.LMBatteryState : Swift.Hashable {}
+extension ShieldSquare.LMBatteryState : Swift.RawRepresentable {}
+extension ShieldSquare.HTTPMethod : Swift.Equatable {}
+extension ShieldSquare.HTTPMethod : Swift.Hashable {}
+extension ShieldSquare.HTTPMethod : Swift.RawRepresentable {}
+extension ShieldSquare.ResponseCodes : Swift.Equatable {}
+extension ShieldSquare.ResponseCodes : Swift.Hashable {}
+extension ShieldSquare.ResponseCodes : Swift.RawRepresentable {}
+extension ShieldSquare.SSReachability.NetworkStatus : Swift.Equatable {}
+extension ShieldSquare.SSReachability.NetworkStatus : Swift.Hashable {}
+extension ShieldSquare.SSReCaptcha.Endpoint : Swift.Equatable {}
+extension ShieldSquare.SSReCaptcha.Endpoint : Swift.Hashable {}
