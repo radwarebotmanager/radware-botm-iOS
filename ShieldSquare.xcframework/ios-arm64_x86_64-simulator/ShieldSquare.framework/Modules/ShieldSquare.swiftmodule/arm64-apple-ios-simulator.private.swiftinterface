@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ShieldSquare
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -284,10 +284,16 @@ public struct SSDeviceInfo {
         public static var isAccelerometerActive: Swift.Bool {
           get
         }
-        public static func setSensorsValues()
+        public static var isMagnetometerAvailble: Swift.Bool {
+          get
+        }
         public static var isGyroAvailable: Swift.Bool {
           get
         }
+        public static func getMagnetometerValue() -> (Swift.String, Swift.String, Swift.String)
+        public static func getGyroScopeSensorValue() -> (Swift.String, Swift.String, Swift.String)
+        public static func getAccelerometerSensorValue() -> (Swift.String, Swift.String, Swift.String)
+        public static func setSensorsValues()
         public static var isGyroActive: Swift.Bool {
           get
         }
@@ -394,9 +400,9 @@ public enum ResponseCodes : Swift.Int {
 extension ShieldSquare.SSURLProtocol : Foundation.URLSessionDataDelegate {
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: Swift.Error?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
-  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: Swift.Error?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: (any Swift.Error)?)
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
 }
@@ -454,7 +460,7 @@ extension ShieldSquare.SSReachability {
   }
 }
 public enum SSReCaptchaError : Swift.Error, Swift.CustomStringConvertible {
-  case unexpected(Swift.Error)
+  case unexpected(any Swift.Error)
   case htmlLoadError
   case apiKeyNotFound
   case baseURLNotFound
