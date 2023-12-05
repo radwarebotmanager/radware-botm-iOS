@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'Radware'
+  s.name             = 'RadwareBotManager'
   s.version          = '5.1.5'
   s.summary          = 'Radware Bot Manager iOS Mobile SDK'
   s.homepage         = 'https://github.com/radwarebotmanager/radware-botm-iOS'
