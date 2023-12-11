@@ -1,7 +1,7 @@
 framework module ShieldSquare {
   umbrella header "ShieldSquare.h"
-
   export *
+
   module * { export * }
 }
 
