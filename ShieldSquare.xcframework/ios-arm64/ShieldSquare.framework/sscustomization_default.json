@@ -5,13 +5,16 @@
             "body" : "I am not a bot, please unblock me."
         }
     },
+    "contactUsEmail" : "botmanager_support@radware.com",
     "text_captcha": {
         "background": {
             "bgColor": "#ffffff",
             "image": ""
         },
         "reloadButton": {
-          "icon" : "default"
+          "icon" : "default",
+          "bgColor": "#FFFFFF",
+          "textAlign": ""
         },
         "submitButton": {
             "text": "Submit",
@@ -26,25 +29,31 @@
             "textColor": "#ff0000",
             "textAlign": "center",
             "fontSize": 15,
-            "fontName": "HelveticaNeue"
+            "fontName": "HelveticaNeue",
+            "bgColor": ""
         },
         "labelMismatch": {
             "text": "Captcha mismatch!",
             "textColor": "#ff0000",
             "textAlign": "center",
             "fontSize": 15,
-            "fontName": "HelveticaNeue"
+            "fontName": "HelveticaNeue",
+            "bgColor": ""
         },
         "textLabel": {
             "text": "Simply enter the characters above into the box below and tap SUBMIT. (Case-Insensitive)",
             "textColor": "#000000",
             "textAlign": "left",
             "fontSize": 14,
-            "fontName": "HelveticaNeue"
+            "fontName": "HelveticaNeue",
+            "bgColor": ""
         },
         "captcha": {
             "bgColor": "#007158",
-            "textColor": "#ffffff"
+            "textColor": "#ffffff",
+            "fontSize": 30,
+            "fontName": "Chalkduster",
+            "textAlign": ""
         }
     },
     "checkbox_captcha": {
@@ -66,6 +75,7 @@
             "textAlign": "left",
             "fontSize": 16,
             "fontName": "HelveticaNeue",
+            "bgColor": ""
         },
         "labelStatus": {
             "text": "Please click on check box",
@@ -73,6 +83,7 @@
             "textAlign": "center",
             "fontSize": 14,
             "fontName": "HelveticaNeue",
+            "bgColor": ""
         }
     },
     "captcha_screen" : {
@@ -108,6 +119,7 @@
             "fontSize": 25,
             "fontName": "Helvetica Neue Bold",
             "textAlign": "center",
+            "bgColor": ""
         },
         "labelDescription": {
             "text": "We noticed some unusual activity and wanted to make sure you are not a robot.",
@@ -115,12 +127,15 @@
             "fontSize": 16,
             "textAlign": "left",
             "fontName": "Helvetica Neue",
+            "bgColor": ""
         },
         "labelDigest": {
             "textColor": "#000000",
             "fontSize": 14,
             "fontName": "Helvetica Neue Bold",
-        },
+            "textAlign": "",
+            "bgColor": ""
+        }
     },
     "block_screen" : {
         "logoImage" : {
@@ -147,6 +162,7 @@
             "fontSize": 25,
             "fontName": "Helvetica Neue Bold",
             "textAlign": "center",
+            "bgColor": ""
         },
         "labelDescription": {
             "text": "To protect this application, we cannot process your request right now\n\nIf you think this is an error, please contact us.",
@@ -154,12 +170,14 @@
             "fontSize": 16,
             "textAlign": "left",
             "fontName": "Helvetica Neue",
+            "bgColor": ""
         },
         "labelDigest": {
             "textColor": "#000000",
             "fontSize": 14,
             "fontName": "Helvetica Neue Bold",
             "textAlign": "center",
+            "bgColor": ""
         }
     }
     
