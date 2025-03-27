@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RadwareBotManagerSDK'
-  s.version          = '5.1.13'
+  s.version          = '5.2.0'
   s.summary          = 'Radware Bot Manager iOS Mobile SDK'
   s.homepage         = 'https://www.radware.com/products/bot-manager/'
   s.license          = { :type => 'Custom', :text => 'https://www.radware.com/documents/eula/' }

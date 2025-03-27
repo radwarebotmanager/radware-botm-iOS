@@ -3014,6 +3014,363 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "ShieldSquare"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SSTokenUtility",
+        "printedName": "SSTokenUtility",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getDefaultToken",
+            "printedName": "getDefaultToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)getDefaultToken",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC15getDefaultTokenSSyFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGenerationTimestamp",
+            "printedName": "getGenerationTimestamp(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ShieldSquare14SSTokenUtilityC22getGenerationTimestamp5tokenS2S_tFZ",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC22getGenerationTimestamp5tokenS2S_tFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateAndSaveUzmtj",
+            "printedName": "validateAndSaveUzmtj(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : ObjectiveC.NSObject]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSObject",
+                    "printedName": "ObjectiveC.NSObject",
+                    "usr": "c:objc(cs)NSObject"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)validateAndSaveUzmtjFrom:",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC20validateAndSaveUzmtj4fromySDySSSo8NSObjectCG_tFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "validateAndSaveUzmtjFrom:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setToken",
+            "printedName": "setToken(token:isETCall:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)setTokenWithToken:isETCall:completion:",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC8setToken5token8isETCall10completionySS_SbyyctFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "setTokenWithToken:isETCall:completion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getToken",
+            "printedName": "getToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)getToken",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC8getTokenSSyFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAvailableTokenType",
+            "printedName": "getAvailableTokenType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)getAvailableTokenType",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC21getAvailableTokenTypeSSyFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "md5Hash",
+            "printedName": "md5Hash(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(cm)md5HashOf:",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityC7md5Hash2ofS2S_tFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "md5HashOf:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SSTokenUtility",
+                "printedName": "ShieldSquare.SSTokenUtility",
+                "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility(im)init",
+            "mangledName": "$s12ShieldSquare14SSTokenUtilityCACycfc",
+            "moduleName": "ShieldSquare",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ShieldSquare@objc(cs)SSTokenUtility",
+        "mangledName": "$s12ShieldSquare14SSTokenUtilityC",
+        "moduleName": "ShieldSquare",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ShieldSquare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
         "declKind": "Import",
@@ -8481,16 +8838,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ShieldSquare",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SystemConfiguration",
         "printedName": "SystemConfiguration",
         "declKind": "Import",
@@ -12185,6 +12532,35 @@
           },
           {
             "kind": "Function",
+            "name": "threadWaitContext",
+            "printedName": "threadWaitContext()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ShieldSquare15ThreadSignalingC17threadWaitContextSSSgyF",
+            "mangledName": "$s12ShieldSquare15ThreadSignalingC17threadWaitContextSSSgyF",
+            "moduleName": "ShieldSquare",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "notifyAllThread",
             "printedName": "notifyAllThread()",
             "children": [
@@ -12197,6 +12573,32 @@
             "declKind": "Func",
             "usr": "s:12ShieldSquare15ThreadSignalingC09notifyAllC0yyF",
             "mangledName": "$s12ShieldSquare15ThreadSignalingC09notifyAllC0yyF",
+            "moduleName": "ShieldSquare",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyAllThreadContext",
+            "printedName": "notifyAllThreadContext(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12ShieldSquare15ThreadSignalingC09notifyAllC7Context7contextySS_tF",
+            "mangledName": "$s12ShieldSquare15ThreadSignalingC09notifyAllC7Context7contextySS_tF",
             "moduleName": "ShieldSquare",
             "declAttributes": [
               "AccessControl"
@@ -12817,6 +13219,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ShieldSquare",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "SSEventType",
         "printedName": "SSEventType",
@@ -13128,9 +13540,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIWindow",
-                "printedName": "UIKit.UIWindow",
-                "usr": "c:objc(cs)UIWindow"
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -13141,10 +13562,78 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@ShieldSquare@objc(cs)ShieldEngine(cm)setupWithKeyWindow:verifyViewType:",
-            "mangledName": "$s12ShieldSquare0A6EngineC5setup9keyWindow14verifyViewTypeySo8UIWindowC_SitFZ",
+            "mangledName": "$s12ShieldSquare0A6EngineC5setup9keyWindow14verifyViewTypeySo8UIWindowCSg_SitFZ",
             "moduleName": "ShieldSquare",
             "static": true,
             "objc_name": "setupWithKeyWindow:verifyViewType:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(verifyViewType:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ShieldConfiguration",
+                "printedName": "ShieldSquare.ShieldConfiguration",
+                "usr": "c:@M@ShieldSquare@objc(cs)ShieldConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)ShieldEngine(cm)setupWithVerifyViewType:configuration:",
+            "mangledName": "$s12ShieldSquare0A6EngineC5setup14verifyViewType13configurationySi_AA0A13ConfigurationCtFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "setupWithVerifyViewType:configuration:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(verifyViewType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)ShieldEngine(cm)setupWithVerifyViewType:",
+            "mangledName": "$s12ShieldSquare0A6EngineC5setup14verifyViewTypeySi_tFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "setupWithVerifyViewType:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13165,9 +13654,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIWindow",
-                "printedName": "UIKit.UIWindow",
-                "usr": "c:objc(cs)UIWindow"
+                "name": "Optional",
+                "printedName": "UIKit.UIWindow?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindow",
+                    "printedName": "UIKit.UIWindow",
+                    "usr": "c:objc(cs)UIWindow"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -13194,7 +13692,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@ShieldSquare@objc(cs)ShieldEngine(cm)setupWithKeyWindow:verifyViewType:configuration:",
-            "mangledName": "$s12ShieldSquare0A6EngineC5setup9keyWindow14verifyViewType13configurationySo8UIWindowC_SiAA0A13ConfigurationCSgtFZ",
+            "mangledName": "$s12ShieldSquare0A6EngineC5setup9keyWindow14verifyViewType13configurationySo8UIWindowCSg_SiAA0A13ConfigurationCSgtFZ",
             "moduleName": "ShieldSquare",
             "static": true,
             "objc_name": "setupWithKeyWindow:verifyViewType:configuration:",
@@ -13748,6 +14246,37 @@
           },
           {
             "kind": "Function",
+            "name": "getApiCookieToken",
+            "printedName": "getApiCookieToken(requestUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ShieldSquare@objc(cs)ShieldEngine(cm)getApiCookieTokenWithRequestUrl:",
+            "mangledName": "$s12ShieldSquare0A6EngineC17getApiCookieToken10requestUrlS2S_tFZ",
+            "moduleName": "ShieldSquare",
+            "static": true,
+            "objc_name": "getApiCookieTokenWithRequestUrl:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "logShieldEvents",
             "printedName": "logShieldEvents(resultObject:)",
             "children": [
@@ -14165,2366 +14694,2436 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 133,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 173,
       "length": 14,
       "value": "\"iPod Touch 5\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 218,
       "length": 14,
       "value": "\"iPod Touch 6\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 263,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 11,
       "value": "\"iPhone 4s\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 346,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 387,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 429,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 471,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 512,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 689,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 730,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 776,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 817,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 863,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 943,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 982,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1021,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1062,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1105,
       "length": 21,
       "value": "\"iPad 5th generation\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1157,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1199,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1287,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1331,
       "length": 10,
       "value": "\"iPad Pro\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1372,
       "length": 11,
       "value": "\"Simulator\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1482,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1526,
       "length": 10,
       "value": "\"4 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1571,
       "length": 12,
       "value": "\"4,7 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1618,
       "length": 12,
       "value": "\"5,5 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1665,
       "length": 12,
       "value": "\"5,8 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1712,
       "length": 12,
       "value": "\"7,9 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1759,
       "length": 12,
       "value": "\"9,7 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1806,
       "length": 13,
       "value": "\"12,9 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1854,
       "length": 13,
       "value": "\"10,5 inches\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 1974,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 2010,
       "length": 6,
       "value": "\"WiFi\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 2043,
       "length": 11,
       "value": "\"WiFi + 3G\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDevice.swift",
       "kind": "StringLiteral",
       "offset": 2081,
       "length": 11,
       "value": "\"WiFi + 4G\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCheckBoxCaptchaViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCheckBoxCaptchaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 309,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSTokenUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 279,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSTokenUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 8298,
+      "length": 22,
+      "value": "\"defaultTokenMetadata\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 368,
       "length": 12,
       "value": "\"execute();\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 10,
       "value": "\"reset();\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 498,
       "length": 12,
       "value": "\"execute();\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 10,
       "value": "\"reset();\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 15,
       "value": "\"Googlebot\/2.1\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1189,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1389,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1953,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1959,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1969,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "IntegerLiteral",
       "offset": 1980,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "StringLiteral",
       "offset": 2089,
       "length": 9,
       "value": "\"webview\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptchaWebViewManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2191,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 842,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 861,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 879,
       "length": 4,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24789,
       "length": 4,
       "value": "\"na\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24803,
       "length": 19,
       "value": "\"accelerometerData\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24870,
       "length": 4,
       "value": "\"na\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24884,
       "length": 10,
       "value": "\"gyroData\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24942,
       "length": 4,
       "value": "\"na\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 24956,
       "length": 18,
       "value": "\"magnetometerData\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25105,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25111,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25219,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25225,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25332,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25338,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25497,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "FloatLiteral",
       "offset": 25503,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 25518,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "BooleanLiteral",
       "offset": 25570,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 25584,
       "length": 12,
       "value": "\"getSensors\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 25912,
       "length": 7,
       "value": "\"acceX\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 25990,
       "length": 7,
       "value": "\"acceY\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 26068,
       "length": 7,
       "value": "\"acceZ\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 26424,
       "length": 7,
       "value": "\"gyroX\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 26502,
       "length": 7,
       "value": "\"gyroY\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSDeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 26580,
       "length": 7,
       "value": "\"gyroZ\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 14,
       "value": "\"SSprivateKey\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 134,
       "length": 6,
       "value": "\"uzlb\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 172,
       "length": 6,
       "value": "\"uzla\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 213,
       "length": 5,
       "value": "\"uzl\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 244,
       "length": 8,
       "value": "\"digest\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 277,
       "length": 7,
       "value": "\"nonce\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
       "offset": 317,
-      "length": 87,
-      "value": "\"timestamp|url|zpset61|uzl|__uzma|__uzmb|__uzmc|__uzmd|__uzmaj|__uzmbj|__uzmcj|__uzmdj\""
+      "length": 94,
+      "value": "\"timestamp|url|zpset61|uzl|__uzma|__uzmb|__uzmc|__uzmd|__uzmaj|__uzmbj|__uzmcj|__uzmdj|__uzmt\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
-      "offset": 439,
-      "length": 155,
-      "value": "\"_zpsbd2|_zpsbd4|_zpsbd5|_zpsbd7|_zpsbd8|_zpsbd9|_zpsbda|_zpsbdt|zpsj|zpsq|zpsr|zpsp|uzl|__uzma|__uzmb|__uzmc|__uzmd|__uzmaj|__uzmbj|__uzmcj|__uzmdj|mdata\""
+      "offset": 446,
+      "length": 257,
+      "value": "\"_zpsbd2|_zpsbd4|_zpsbd5|_zpsbd7|_zpsbd8|_zpsbd9|_zpsbda|_zpsbdt|zpsq|zpsr|zpsn|zpss|zpsm|zpso|zpsl|zpsp|uzl|__uzma|__uzmb|__uzmc|__uzmd|__uzmaj|__uzmbj|__uzmcj|__uzmdj|mdata.m1|mdata.m3|mdata.m6|mdata.m10|mdata.m16|mdata.m21|mdata.m71|mdata.m72|mdata.m111\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCryptoId.swift",
       "kind": "StringLiteral",
-      "offset": 620,
+      "offset": 729,
       "length": 5,
       "value": "\"3f0\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 33,
       "value": "\"https:\/\/rwscus.shieldsquare.net\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 13,
       "value": "\"\/mobiledata\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 305,
+      "length": 22,
+      "value": "\"\/mobiledata\/sentinel\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
       "length": 18,
       "value": "\"SS_SUBSCRIBER_ID\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 360,
-      "length": 17,
-      "value": "\"APP_ENVIRONMENT\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 420,
+      "offset": 428,
       "length": 21,
       "value": "\"CUSTOM_INTERCEPTION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 483,
+      "offset": 491,
       "length": 21,
       "value": "\"SS_MAX_EVENTS_COUNT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 555,
+      "offset": 563,
       "length": 25,
       "value": "\"SS_EVENTS_TIME_INTERVAL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 630,
       "length": 25,
       "value": "\"SS_EVENTS_DATA_INTERVAL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 691,
+      "offset": 699,
       "length": 27,
       "value": "\"SS_EVENTS_RESPONSE_ACTION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 757,
+      "offset": 765,
       "length": 22,
       "value": "\"SS_ATT_TIME_INTERVAL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 818,
+      "offset": 826,
       "length": 13,
       "value": "\"SS_POST_URL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 874,
       "length": 14,
       "value": "\"SS_TRK_EVENT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 936,
+      "offset": 944,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 997,
+      "offset": 993,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1055,
       "length": 6,
       "value": "\"-101\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1117,
       "length": 6,
       "value": "\"-102\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1119,
+      "offset": 1177,
       "length": 6,
       "value": "\"-103\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1161,
+      "offset": 1219,
       "length": 16,
       "value": "\"contactUsEmail\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1214,
+      "offset": 1272,
       "length": 6,
       "value": "\"zbd2\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1277,
+      "offset": 1323,
+      "length": 98,
+      "value": "\"Access verification in progress...\n\nPlease wait.\nThis may take up to\n<x> minute to complete.\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1462,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1495,
+      "length": 19,
+      "value": "\"Transaction Id:\n\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1562,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1610,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1665,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1710,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1760,
+      "length": 3,
+      "value": "408"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1803,
+      "length": 32,
+      "value": "\"Max Attempts Request Timed Out\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
+      "length": 6,
+      "value": "\"true\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1905,
+      "length": 7,
+      "value": "\"false\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1944,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1984,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2017,
+      "length": 3,
+      "value": "\"3\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2061,
+      "length": 5,
+      "value": "\"7f6\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2099,
+      "length": 7,
+      "value": "\"00000\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2143,
+      "length": 4,
+      "value": "\"10\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2183,
+      "length": 46,
+      "value": "\"iOSzO0D1ONGlYW9wZsLmFqbP7PDUmlExhqFZrc+Ojf0=\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2264,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2304,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2346,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2396,
+      "length": 3,
+      "value": "\"2\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2436,
+      "length": 10,
+      "value": "\"__uzmfdt\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2477,
+      "length": 10,
+      "value": "\"__uzmfst\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2531,
+      "length": 2,
+      "value": "61"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2573,
+      "length": 2,
+      "value": "62"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2610,
+      "length": 2,
+      "value": "63"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2668,
       "length": 9,
       "value": "\"OPTIONS\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1306,
+      "offset": 2697,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
+      "offset": 2722,
       "length": 6,
       "value": "\"HEAD\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1357,
+      "offset": 2748,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1383,
+      "offset": 2774,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 2799,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 2826,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1463,
+      "offset": 2854,
       "length": 7,
       "value": "\"TRACE\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 2881,
       "length": 9,
       "value": "\"CONNECT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1555,
+      "offset": 2946,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1573,
+      "offset": 2964,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 282,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 314,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 345,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 374,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 408,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 441,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
       "offset": 477,
-      "length": 2,
-      "value": "13"
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 516,
+      "offset": 510,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 547,
+      "offset": 541,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 612,
+      "offset": 584,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 620,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
       "length": 2,
       "value": "61"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 648,
+      "offset": 722,
       "length": 2,
       "value": "62"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 685,
+      "offset": 759,
       "length": 2,
       "value": "63"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 710,
+      "offset": 784,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 774,
+      "offset": 848,
       "length": 4,
       "value": "\"e1\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 809,
+      "offset": 883,
       "length": 4,
       "value": "\"e2\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 924,
       "length": 4,
       "value": "\"e3\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 961,
       "length": 4,
       "value": "\"e4\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 927,
+      "offset": 1001,
       "length": 4,
       "value": "\"ts\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1075,
       "length": 5,
       "value": "\"CRT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1043,
+      "offset": 1117,
       "length": 6,
       "value": "\"DEST\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1092,
+      "offset": 1166,
       "length": 5,
       "value": "\"RES\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1140,
+      "offset": 1214,
       "length": 6,
       "value": "\"STOP\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 1261,
       "length": 7,
       "value": "\"PAUSE\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 1228,
+      "offset": 1302,
       "length": 5,
       "value": "\"ROT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "Dictionary",
-      "offset": 1312,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1352,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
       "offset": 1386,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1414,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1443,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1475,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1589,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "Dictionary",
-      "offset": 1772,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1426,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1460,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1499,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1527,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1556,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1588,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1702,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "Dictionary",
+      "offset": 1885,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1922,
+      "offset": 2155,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1966,
+      "offset": 2209,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2242,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2319,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2358,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2027,
+      "offset": 2420,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2031,
+      "offset": 2424,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2035,
+      "offset": 2428,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2089,
+      "offset": 2482,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2094,
+      "offset": 2487,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2099,
+      "offset": 2492,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2160,
-      "length": 20,
-      "value": "\"ATTESTATION_EXPIRY\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2193,
-      "length": 5,
-      "value": "86400"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2280,
+      "offset": 2578,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2315,
+      "offset": 2613,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2378,
+      "offset": 2676,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2420,
+      "offset": 2718,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2542,
+      "offset": 2840,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2586,
+      "offset": 2884,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 2659,
+      "offset": 2957,
       "length": 14,
       "value": "\"captchaQueue\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2730,
+      "offset": 3028,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "Dictionary",
-      "offset": 18779,
+      "offset": 22439,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 20100,
+      "offset": 23760,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 20337,
+      "offset": 23997,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 26631,
+      "offset": 29616,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 29823,
+      "offset": 32855,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/MD5.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/MD5.swift",
       "kind": "IntegerLiteral",
       "offset": 8434,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 197,
-      "length": 21,
-      "value": "\"ENABLE_DEVICE_CHECK\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 257,
-      "length": 26,
-      "value": "\"DEVICE_CHECK_ON_RELAUNCH\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 309,
+      "offset": 196,
       "length": 20,
       "value": "\"ENABLE_ATTESTATION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 365,
+      "offset": 252,
       "length": 23,
       "value": "\"ASSERTION_ON_RELAUNCH\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 414,
-      "length": 20,
-      "value": "\"ATTESTATION_EXPIRY\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 459,
+      "offset": 300,
       "length": 18,
       "value": "\"SS_RECAPTCHA_KEY\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 501,
+      "offset": 342,
       "length": 21,
       "value": "\"SS_RECAPTCHA_DOMAIN\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 547,
+      "offset": 388,
       "length": 21,
       "value": "\"SS_CONTACT_US_EMAIL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 593,
+      "offset": 434,
       "length": 18,
       "value": "\"SS_SUBSCRIBER_ID\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 633,
-      "length": 17,
-      "value": "\"APP_ENVIRONMENT\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 677,
+      "offset": 479,
       "length": 21,
       "value": "\"CUSTOM_INTERCEPTION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 732,
+      "offset": 534,
       "length": 25,
       "value": "\"RDWR_REACT_INTERCEPTION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 595,
       "length": 27,
       "value": "\"RDWR_REACT_ENABLED_DOMAIN\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 845,
+      "offset": 647,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 890,
+      "offset": 692,
       "length": 25,
       "value": "\"SS_EVENTS_TIME_INTERVAL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 745,
       "length": 25,
       "value": "\"SS_EVENTS_DATA_INTERVAL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 998,
+      "offset": 800,
       "length": 27,
       "value": "\"SS_EVENTS_RESPONSE_ACTION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
+      "offset": 851,
       "length": 21,
       "value": "\"SS_MAX_EVENTS_COUNT\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1149,
+      "offset": 946,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1207,
+      "offset": 1002,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "kind": "StringLiteral",
+      "offset": 1049,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "kind": "StringLiteral",
+      "offset": 1163,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1208,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "BooleanLiteral",
       "offset": 1255,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1313,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1359,
-      "length": 5,
-      "value": "86400"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 1406,
+      "offset": 1305,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "StringLiteral",
-      "offset": 1520,
+      "offset": 1349,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 1555,
-      "length": 12,
-      "value": "\"production\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1610,
+      "offset": 1441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1657,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 1707,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "StringLiteral",
-      "offset": 1751,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/PersistantStorage\/PlistReader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1843,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldUtility.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldUtility.swift",
       "kind": "StringLiteral",
       "offset": 4295,
       "length": 5,
       "value": "\"A03\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldUtility.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldUtility.swift",
       "kind": "IntegerLiteral",
       "offset": 7363,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSURLProtocol.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSURLProtocol.swift",
       "kind": "Array",
       "offset": 263,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSURLProtocol.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSURLProtocol.swift",
       "kind": "StringLiteral",
       "offset": 328,
       "length": 27,
       "value": "\"URLProtocolRequestHandled\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 467,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 530,
       "length": 10,
       "value": "0x67452301"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 576,
       "length": 10,
       "value": "0xEFCDAB89"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 622,
       "length": 10,
       "value": "0x98BADCFE"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 668,
       "length": 10,
       "value": "0x10325476"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SHA1.swift",
       "kind": "IntegerLiteral",
       "offset": 714,
       "length": 10,
       "value": "0xC3D2E1F0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/ET63\/DeviceCheck\/SSDeviceCheck.swift",
-      "kind": "StringLiteral",
-      "offset": 214,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/Services\/ET63\/DeviceCheck\/SSDeviceCheck.swift",
-      "kind": "StringLiteral",
-      "offset": 252,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
       "kind": "StringLiteral",
       "offset": 1635,
       "length": 35,
       "value": "\"SSReachabilityChangedNotification\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
       "kind": "BooleanLiteral",
       "offset": 3547,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
       "kind": "BooleanLiteral",
       "offset": 3618,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReachability.swift",
       "kind": "StringLiteral",
       "offset": 3756,
       "length": 32,
       "value": "\"uk.co.ashleymills.reachability\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1816,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
       "kind": "FloatLiteral",
       "offset": 1907,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2111,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2216,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSPopupViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2294,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
       "kind": "StringLiteral",
       "offset": 484,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
       "kind": "StringLiteral",
       "offset": 510,
       "length": 25,
       "value": "\"Please enter captcha!!!\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaContainerViewController.swift",
       "kind": "Array",
       "offset": 923,
       "length": 310,
       "value": "[\"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\", \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\", \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\"]"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ThreadSignaling.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ThreadSignaling.swift",
       "kind": "IntegerLiteral",
       "offset": 248,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ThreadSignaling.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ThreadSignaling.swift",
       "kind": "IntegerLiteral",
       "offset": 349,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ThreadSignaling.swift",
+      "kind": "IntegerLiteral",
+      "offset": 464,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 732,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 823,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1062,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 233,
-      "length": 21,
-      "value": "\"ENABLE_DEVICE_CHECK\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 289,
-      "length": 26,
-      "value": "\"DEVICE_CHECK_ON_RELAUNCH\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 232,
       "length": 20,
       "value": "\"ENABLE_ATTESTATION\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 393,
-      "length": 20,
-      "value": "\"ATTESTATION_EXPIRY\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 467,
-      "length": 6,
-      "value": "\"zpsi\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 502,
-      "length": 6,
-      "value": "\"zpsj\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 537,
-      "length": 6,
-      "value": "\"zpsk\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 564,
+      "offset": 280,
       "length": 6,
       "value": "\"zpsl\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 592,
+      "offset": 318,
       "length": 6,
       "value": "\"zpsm\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 353,
       "length": 6,
       "value": "\"zpsn\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 658,
+      "offset": 385,
       "length": 6,
       "value": "\"zpss\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 689,
-      "length": 17,
-      "value": "\"lastDeviceCheck\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 734,
+      "offset": 420,
       "length": 6,
       "value": "\"zpso\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 765,
+      "offset": 451,
       "length": 6,
       "value": "\"zpsp\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 805,
-      "length": 17,
-      "value": "\"attestationDone\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "StringLiteral",
-      "offset": 852,
+      "offset": 487,
       "length": 6,
       "value": "\"zpsq\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 885,
+      "offset": 520,
       "length": 6,
       "value": "\"zpsr\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 916,
-      "length": 17,
-      "value": "\"lastAttestation\""
+      "offset": 552,
+      "length": 6,
+      "value": "\"zpsi\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 610,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "kind": "BooleanLiteral",
+      "offset": 644,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "StringLiteral",
-      "offset": 955,
-      "length": 16,
-      "value": "\"lastAssesrtion\""
+      "offset": 683,
+      "length": 2,
+      "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 992,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1016,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
       "kind": "IntegerLiteral",
-      "offset": 1044,
-      "length": 4,
-      "value": "3600"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1066,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1104,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1181,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1204,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1223,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1284,
+      "offset": 736,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1314,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 785,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1348,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSAttestation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1378,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
       "kind": "StringLiteral",
       "offset": 307,
       "length": 18,
       "value": "\"SS_RECAPTCHA_KEY\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
       "kind": "StringLiteral",
       "offset": 358,
       "length": 21,
       "value": "\"SS_RECAPTCHA_DOMAIN\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
       "kind": "StringLiteral",
       "offset": 1820,
       "length": 11,
       "value": "\"ReCaptcha\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
       "kind": "StringLiteral",
       "offset": 1841,
       "length": 8,
       "value": "\"bundle\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSReCaptcha.swift",
       "kind": "BooleanLiteral",
       "offset": 6127,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "IntegerLiteral",
       "offset": 211,
       "length": 3,
       "value": "123"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 292,
       "length": 17,
       "value": "\"sscustomization\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 357,
       "length": 25,
       "value": "\"sscustomization_default\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 14,
       "value": "\"text_captcha\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 469,
       "length": 18,
       "value": "\"checkbox_captcha\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 11,
       "value": "\"btnVerify\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 577,
       "length": 14,
       "value": "\"reloadButton\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 631,
       "length": 12,
       "value": "\"btnContact\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 674,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 11,
       "value": "\"textColor\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 759,
       "length": 11,
       "value": "\"textAlign\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 804,
       "length": 9,
       "value": "\"bgColor\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 844,
       "length": 7,
       "value": "\"image\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 886,
       "length": 10,
       "value": "\"fontSize\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 10,
       "value": "\"fontName\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 978,
       "length": 12,
       "value": "\"fontWeight\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1028,
       "length": 12,
       "value": "\"labelTitle\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1076,
       "length": 18,
       "value": "\"labelDescription\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1132,
       "length": 13,
       "value": "\"labelDigest\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 13,
       "value": "\"labelStatus\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1236,
       "length": 15,
       "value": "\"labelMismatch\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1287,
       "length": 11,
       "value": "\"textLabel\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1327,
       "length": 12,
       "value": "\"background\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1372,
       "length": 6,
       "value": "\"view\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1410,
       "length": 8,
       "value": "\"labels\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1451,
       "length": 9,
       "value": "\"buttons\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1493,
       "length": 9,
       "value": "\"captcha\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1537,
       "length": 14,
       "value": "\"submitButton\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1591,
       "length": 17,
       "value": "\"ss_captcha_logo\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1650,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1701,
       "length": 15,
       "value": "\"ss_block_logo\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1761,
       "length": 23,
       "value": "\"ss_block_logo_default\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1825,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1866,
       "length": 15,
       "value": "\"HelveticaNeue\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1918,
       "length": 16,
       "value": "\"captcha_screen\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 1968,
       "length": 14,
       "value": "\"block_screen\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2026,
       "length": 9,
       "value": "\"subject\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2071,
       "length": 6,
       "value": "\"body\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2113,
       "length": 7,
       "value": "\"email\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2152,
       "length": 8,
       "value": "\"fields\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2195,
       "length": 11,
       "value": "\"logoImage\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2235,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2270,
       "length": 6,
       "value": "\"icon\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2313,
       "length": 8,
       "value": "\"digest\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2351,
       "length": 6,
       "value": "\"show\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2407,
       "length": 16,
       "value": "\"I am not a Bot\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2469,
       "length": 36,
       "value": "\"I am not a bot, please unblock me.\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCustomization.swift",
       "kind": "StringLiteral",
       "offset": 8004,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 213,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 254,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 20,
       "value": "\"LAST_REQUESTED_URL\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 583,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 632,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
       "offset": 679,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 4268,
+      "offset": 4765,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "StringLiteral",
-      "offset": 6188,
+      "offset": 6685,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "Dictionary",
-      "offset": 6224,
+      "offset": 6721,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 11707,
+      "offset": 12204,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Desktop\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
+      "filePath": "\/Users\/radware\/Documents\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldEngine.swift",
       "kind": "IntegerLiteral",
-      "offset": 15199,
+      "offset": 16047,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-axifhuzelgljasbroqhiidscjacp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-exbstfmdugktgmdokfcoedoutzai\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 18,
       "value": "\"new-refresh-icon\""
     },
     {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-axifhuzelgljasbroqhiidscjacp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-exbstfmdugktgmdokfcoedoutzai\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 894,
       "length": 14,
       "value": "\"refresh-icon\""
     },
     {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-axifhuzelgljasbroqhiidscjacp\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-exbstfmdugktgmdokfcoedoutzai\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphoneos\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1032,
       "length": 9,

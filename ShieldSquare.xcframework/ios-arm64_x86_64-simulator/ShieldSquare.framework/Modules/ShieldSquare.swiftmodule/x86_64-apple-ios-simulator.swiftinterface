@@ -128,6 +128,17 @@ extension ShieldSquare.SSDevice : Swift.CustomStringConvertible {
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class SSTokenUtility : ObjectiveC.NSObject {
+  @objc public static func getDefaultToken() -> Swift.String
+  public static func getGenerationTimestamp(token: Swift.String) -> Swift.String
+  @objc public static func validateAndSaveUzmtj(from gitData: [Swift.String : ObjectiveC.NSObject])
+  @objc public static func setToken(token: Swift.String, isETCall: Swift.Bool, completion: @escaping () -> Swift.Void)
+  @objc public static func getToken() -> Swift.String
+  @objc public static func getAvailableTokenType() -> Swift.String
+  @objc public static func md5Hash(of string: Swift.String) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 public enum SSReCaptchaResult {
   case token(Swift.String)
   case error(ShieldSquare.SSReCaptchaError)
@@ -507,7 +518,9 @@ extension ShieldSquare.PopupViewController : UIKit.UIGestureRecognizerDelegate {
 @_hasMissingDesignatedInitializers public class ThreadSignaling {
   public static let shared: ShieldSquare.ThreadSignaling
   public func threadWait()
+  public func threadWaitContext() -> Swift.String?
   public func notifyAllThread()
+  public func notifyAllThreadContext(context: Swift.String)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class SSReCaptcha {
@@ -538,8 +551,10 @@ public struct SSEventType {
     public static let sstextcaptcha: Swift.Int
     public static let ssrecaptcha: Swift.Int
   }
-  @objc public static func setup(keyWindow: UIKit.UIWindow, verifyViewType: Swift.Int)
-  @objc public static func setup(keyWindow: UIKit.UIWindow, verifyViewType: Swift.Int = ShieldEngine.SSCaptchaViewType.sscheckboxcaptcha, configuration: ShieldSquare.ShieldConfiguration? = nil)
+  @objc public static func setup(keyWindow: UIKit.UIWindow? = nil, verifyViewType: Swift.Int)
+  @objc public static func setup(verifyViewType: Swift.Int, configuration: ShieldSquare.ShieldConfiguration)
+  @objc public static func setup(verifyViewType: Swift.Int)
+  @objc public static func setup(keyWindow: UIKit.UIWindow? = nil, verifyViewType: Swift.Int = ShieldEngine.SSCaptchaViewType.sscheckboxcaptcha, configuration: ShieldSquare.ShieldConfiguration? = nil)
   @objc public static func enableSSLogs(enableLogs: Swift.Bool = false)
   @objc public static func setUserId(userId: Swift.String)
   public static func makeCalltypeFive()
@@ -556,6 +571,7 @@ public struct SSEventType {
   public static func getUnixTimeStamp() -> Swift.Int64
   public static func getValueFromCookie(domain: Swift.String?, key: Swift.String) -> Swift.String
   @objc public static func getApiHeaders(requestUrl: Swift.String) -> [Swift.String : Swift.String]
+  @objc public static func getApiCookieToken(requestUrl: Swift.String) -> Swift.String
   @objc public static func logShieldEvents(resultObject: Foundation.HTTPURLResponse?)
   public static func logDebugValues(message: Swift.String?, items: Any?)
   public static func getLastCaptchaSolveTime() -> Swift.Int

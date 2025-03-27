@@ -324,6 +324,18 @@ SWIFT_CLASS("_TtC12ShieldSquare19PopupViewController")
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS("_TtC12ShieldSquare14SSTokenUtility")
+@interface SSTokenUtility : NSObject
++ (NSString * _Nonnull)getDefaultToken SWIFT_WARN_UNUSED_RESULT;
++ (void)validateAndSaveUzmtjFrom:(NSDictionary<NSString *, NSObject *> * _Nonnull)gitData;
++ (void)setTokenWithToken:(NSString * _Nonnull)token isETCall:(BOOL)isETCall completion:(void (^ _Nonnull)(void))completion;
++ (NSString * _Nonnull)getToken SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getAvailableTokenType SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)md5HashOf:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSURLRequest;
 @class NSCachedURLResponse;
 @protocol NSURLProtocolClient;
@@ -380,7 +392,11 @@ SWIFT_CLASS("_TtCC12ShieldSquare19ShieldConfiguration7Builder")
 SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 @interface ShieldEngine : NSObject
 /// overloading setup function as in objective c default arguments are not directly exposed
-+ (void)setupWithKeyWindow:(UIWindow * _Nonnull)keyWindow verifyViewType:(NSInteger)verifyViewType;
++ (void)setupWithKeyWindow:(UIWindow * _Nullable)keyWindow verifyViewType:(NSInteger)verifyViewType;
+/// overloading setup function as in objective c default arguments are not directly exposed
++ (void)setupWithVerifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nonnull)configuration;
+/// overloading setup function as in objective c default arguments are not directly exposed
++ (void)setupWithVerifyViewType:(NSInteger)verifyViewType;
 /// This is the initilization method for the SDK
 /// note:
 /// For ReCAPTCHA add the key and domain in the plist.info
@@ -402,7 +418,7 @@ SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 /// returns:
 ///
 /// void
-+ (void)setupWithKeyWindow:(UIWindow * _Nonnull)keyWindow verifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nullable)configuration;
++ (void)setupWithKeyWindow:(UIWindow * _Nullable)keyWindow verifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nullable)configuration;
 + (void)enableSSLogsWithEnableLogs:(BOOL)enableLogs;
 /// To set the user ID of the visitor if the user has logged in.
 /// \param userId userId for the logged in user
@@ -417,6 +433,7 @@ SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 ///
 + (void)trackEventsWithEventName:(NSString * _Nullable)eventName screenName:(NSString * _Nullable)screenName eventParams:(NSDictionary<NSString *, id> * _Nullable)eventParams;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getApiHeadersWithRequestUrl:(NSString * _Nonnull)requestUrl SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getApiCookieTokenWithRequestUrl:(NSString * _Nonnull)requestUrl SWIFT_WARN_UNUSED_RESULT;
 + (void)logShieldEventsWithResultObject:(NSHTTPURLResponse * _Nullable)resultObject;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -767,6 +784,18 @@ SWIFT_CLASS("_TtC12ShieldSquare19PopupViewController")
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+SWIFT_CLASS("_TtC12ShieldSquare14SSTokenUtility")
+@interface SSTokenUtility : NSObject
++ (NSString * _Nonnull)getDefaultToken SWIFT_WARN_UNUSED_RESULT;
++ (void)validateAndSaveUzmtjFrom:(NSDictionary<NSString *, NSObject *> * _Nonnull)gitData;
++ (void)setTokenWithToken:(NSString * _Nonnull)token isETCall:(BOOL)isETCall completion:(void (^ _Nonnull)(void))completion;
++ (NSString * _Nonnull)getToken SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getAvailableTokenType SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)md5HashOf:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSURLRequest;
 @class NSCachedURLResponse;
 @protocol NSURLProtocolClient;
@@ -823,7 +852,11 @@ SWIFT_CLASS("_TtCC12ShieldSquare19ShieldConfiguration7Builder")
 SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 @interface ShieldEngine : NSObject
 /// overloading setup function as in objective c default arguments are not directly exposed
-+ (void)setupWithKeyWindow:(UIWindow * _Nonnull)keyWindow verifyViewType:(NSInteger)verifyViewType;
++ (void)setupWithKeyWindow:(UIWindow * _Nullable)keyWindow verifyViewType:(NSInteger)verifyViewType;
+/// overloading setup function as in objective c default arguments are not directly exposed
++ (void)setupWithVerifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nonnull)configuration;
+/// overloading setup function as in objective c default arguments are not directly exposed
++ (void)setupWithVerifyViewType:(NSInteger)verifyViewType;
 /// This is the initilization method for the SDK
 /// note:
 /// For ReCAPTCHA add the key and domain in the plist.info
@@ -845,7 +878,7 @@ SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 /// returns:
 ///
 /// void
-+ (void)setupWithKeyWindow:(UIWindow * _Nonnull)keyWindow verifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nullable)configuration;
++ (void)setupWithKeyWindow:(UIWindow * _Nullable)keyWindow verifyViewType:(NSInteger)verifyViewType configuration:(ShieldConfiguration * _Nullable)configuration;
 + (void)enableSSLogsWithEnableLogs:(BOOL)enableLogs;
 /// To set the user ID of the visitor if the user has logged in.
 /// \param userId userId for the logged in user
@@ -860,6 +893,7 @@ SWIFT_CLASS("_TtC12ShieldSquare12ShieldEngine")
 ///
 + (void)trackEventsWithEventName:(NSString * _Nullable)eventName screenName:(NSString * _Nullable)screenName eventParams:(NSDictionary<NSString *, id> * _Nullable)eventParams;
 + (NSDictionary<NSString *, NSString *> * _Nonnull)getApiHeadersWithRequestUrl:(NSString * _Nonnull)requestUrl SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nonnull)getApiCookieTokenWithRequestUrl:(NSString * _Nonnull)requestUrl SWIFT_WARN_UNUSED_RESULT;
 + (void)logShieldEventsWithResultObject:(NSHTTPURLResponse * _Nullable)resultObject;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
