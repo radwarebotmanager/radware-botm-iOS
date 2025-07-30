@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/ShieldSquare-Swift.h</key>
 		<data>
-		gE4fmJu2NhR0AFPq1Yo2g2NYGkM=
+		cVWzFtOPIUeK7qMEz9qCWkH/lgE=
 		</data>
 		<key>Headers/ShieldSquare.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZyQ0q2bXxHEENhH58qKouHxgEyI=
+		ANR0FJwP4fd+cCx+zcZctTpTDBY=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5s5oTzEw+KcLBnXbtBBcRs+rrRM=
+		7SCrN9zN5yjdyiiwL8o+SqyUxkU=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		DMhy1BNdCrL/mTPKkI4jLTfklbs=
+		V3QZ4SGrjBEUONfjVWRVlxKKHMw=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pWr4ACz2bfpQBxtxGDA3X1m+BjM=
+		dBEJOYIQLBLs4RtS4krgaIPPbY0=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DMhy1BNdCrL/mTPKkI4jLTfklbs=
+		V3QZ4SGrjBEUONfjVWRVlxKKHMw=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Bjg0/jOvl/VCNXeGBBCPT235OyY=
+		HBUb8LYfzX12KGnARi9Kc/oN3Y0=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5s5oTzEw+KcLBnXbtBBcRs+rrRM=
+		7SCrN9zN5yjdyiiwL8o+SqyUxkU=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		d1mppR8YvWNAKujC4Ip6xPeTph0=
+		GH60k/s24BN/21CbOMvhsc72MLA=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3vgMOjnmit4hMMTKu9XAXKNLI6o=
+		02cvodBul4yh1zB4IOfN9Nf6vYw=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		d1mppR8YvWNAKujC4Ip6xPeTph0=
+		GH60k/s24BN/21CbOMvhsc72MLA=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xjwn95wRlXSvVHkw8HL4okAJNBo=
+		3GkVzx/xlIkI54qw5dzr/yeBIm4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GYG0JPG48CaoZJB4vKZmx41NrTzf3MP3JWh/JtNyEfs=
+			IOziLiTdvCpn2jz7jqqeQ15Gi7L+cK1q27XsOkqnAAs=
 			</data>
 		</dict>
 		<key>Headers/ShieldSquare.h</key>
@@ -116,70 +116,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fbNnpsd5sQO3yNli3cjF6J0XzBCMzagomk89AFIwFHI=
+			2LifRAWuU6D+KHTIxLefz8hj+JWDI6bbxR8ZrCSeS5o=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4pgQA4BPcrPlZuD8gEP3lP2iVneP037L+60CbwZi0fQ=
+			5sQFsNysJUdcdcLrOomP6Qma4t67vRSRufMWigGEDnU=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r9M6/Z9AvEf3X729A2wIkn14G7oswfrAINif9pO65x8=
+			qC/ybMez2LTYARMhF+cyYHXmKyhCYmSCKoRmyLDQO04=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4pgQA4BPcrPlZuD8gEP3lP2iVneP037L+60CbwZi0fQ=
+			5sQFsNysJUdcdcLrOomP6Qma4t67vRSRufMWigGEDnU=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/P66Qn/dyz+dHnywVjwPNh3oSGbON+J/EgSSjTvU5Y=
+			Xm3/GdIZWCJlb5WTMWuX01VQOtHzEYmqk3uYo32oqv0=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fbNnpsd5sQO3yNli3cjF6J0XzBCMzagomk89AFIwFHI=
+			2LifRAWuU6D+KHTIxLefz8hj+JWDI6bbxR8ZrCSeS5o=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ulAaRez+rjjhsNBrHV7AU4exszkwXRnlvOt5P8jlmM=
+			6tpshziAhvFPZ6FlyZum9/VR7x2q5Vh1gkf/MtGHbic=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QR/5MhRvur13cmRRyhG07Ww3E/Mf7sj3LXK5OBVTZ7c=
+			Mu4+gVh9JJg7vRe65YhCd8yMEa2IyE5yHj2MuTDQpaQ=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ulAaRez+rjjhsNBrHV7AU4exszkwXRnlvOt5P8jlmM=
+			6tpshziAhvFPZ6FlyZum9/VR7x2q5Vh1gkf/MtGHbic=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NTAU0ND8N/i/ft4C8jQd395yPQG8ew10GSUc9aiyayA=
+			tTgaxpWIkQRRtWw6AOTg2vs4C3jyKl0nmuK8j3VYR5I=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -327,11 +327,11 @@ SWIFT_CLASS("_TtC12ShieldSquare19PopupViewController")
 
 SWIFT_CLASS("_TtC12ShieldSquare14SSTokenUtility")
 @interface SSTokenUtility : NSObject
-+ (NSString * _Nonnull)getDefaultToken SWIFT_WARN_UNUSED_RESULT;
 + (void)validateAndSaveUzmtjFrom:(NSDictionary<NSString *, NSObject *> * _Nonnull)gitData;
 + (void)setTokenWithToken:(NSString * _Nonnull)token isETCall:(BOOL)isETCall completion:(void (^ _Nonnull)(void))completion;
 + (NSString * _Nonnull)getToken SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getAvailableTokenType SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isTemporaryAttestationToken SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)md5HashOf:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

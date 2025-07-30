@@ -129,12 +129,12 @@ extension ShieldSquare.SSDevice : Swift.CustomStringConvertible {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class SSTokenUtility : ObjectiveC.NSObject {
-  @objc public static func getDefaultToken() -> Swift.String
   public static func getGenerationTimestamp(token: Swift.String) -> Swift.String
   @objc public static func validateAndSaveUzmtj(from gitData: [Swift.String : ObjectiveC.NSObject])
   @objc public static func setToken(token: Swift.String, isETCall: Swift.Bool, completion: @escaping () -> Swift.Void)
   @objc public static func getToken() -> Swift.String
   @objc public static func getAvailableTokenType() -> Swift.String
+  @objc public static func isTemporaryAttestationToken() -> Swift.Bool
   @objc public static func md5Hash(of string: Swift.String) -> Swift.String
   @objc override dynamic public init()
   @objc deinit
@@ -302,33 +302,6 @@ public struct SSDeviceInfo {
           get
         }
         public static var isHeadsetPluggedIn: Swift.Bool {
-          get
-        }
-      }
-      public struct Sensors {
-        public static var isAccelerometerAvailable: Swift.Bool {
-          get
-        }
-        public static var isAccelerometerActive: Swift.Bool {
-          get
-        }
-        public static var isMagnetometerAvailble: Swift.Bool {
-          get
-        }
-        public static var isGyroAvailable: Swift.Bool {
-          get
-        }
-        public static func getMagnetometerValue() -> (Swift.String, Swift.String, Swift.String)
-        public static func getGyroScopeSensorValue() -> (Swift.String, Swift.String, Swift.String)
-        public static func getAccelerometerSensorValue() -> (Swift.String, Swift.String, Swift.String)
-        public static func setSensorsValues()
-        public static var isGyroActive: Swift.Bool {
-          get
-        }
-        public static var isMagnetometerAvailable: Swift.Bool {
-          get
-        }
-        public static var isDeviceMotionAvailable: Swift.Bool {
           get
         }
       }
