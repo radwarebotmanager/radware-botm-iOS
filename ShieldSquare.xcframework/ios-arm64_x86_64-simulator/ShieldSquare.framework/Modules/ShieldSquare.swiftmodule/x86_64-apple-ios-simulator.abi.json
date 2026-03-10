@@ -8338,6 +8338,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -8594,6 +8601,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -10240,6 +10254,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -11947,6 +11968,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -14186,34 +14214,6 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "ShieldSquare"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "ShieldSquare"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "ShieldSquare"
-      },
-      {
-        "kind": "Import",
-        "name": "DeveloperToolsSupport",
-        "printedName": "DeveloperToolsSupport",
-        "declKind": "Import",
-        "moduleName": "ShieldSquare"
       }
     ],
     "json_format_version": 8
@@ -15531,14 +15531,14 @@
     {
       "filePath": "\/Users\/radware\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 29567,
+      "offset": 29556,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/radware\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldManager.swift",
       "kind": "StringLiteral",
-      "offset": 32806,
+      "offset": 32908,
       "length": 2,
       "value": "\"\""
     },
@@ -15720,7 +15720,7 @@
     {
       "filePath": "\/Users\/radware\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/ShieldUtility.swift",
       "kind": "IntegerLiteral",
-      "offset": 7411,
+      "offset": 7313,
       "length": 1,
       "value": "0"
     },
@@ -15895,14 +15895,14 @@
     {
       "filePath": "\/Users\/radware\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 823,
+      "offset": 899,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/radware\/XcodeProjects\/ios_captcha-sdk\/ShieldSquare\/SSCaptchaViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1062,
+      "offset": 1138,
       "length": 5,
       "value": "false"
     },
@@ -16458,27 +16458,6 @@
       "offset": 16032,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-fnbeysrsgxogqzahphbrrafdurdy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphonesimulator\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 18,
-      "value": "\"new-refresh-icon\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-fnbeysrsgxogqzahphbrrafdurdy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphonesimulator\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 894,
-      "length": 14,
-      "value": "\"refresh-icon\""
-    },
-    {
-      "filePath": "\/Users\/radware\/Library\/Developer\/Xcode\/DerivedData\/ShieldSquare-fnbeysrsgxogqzahphbrrafdurdy\/Build\/Intermediates.noindex\/ArchiveIntermediates\/ShieldSquare\/IntermediateBuildFilesPath\/ShieldSquare.build\/Release-iphonesimulator\/ShieldSquare.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1032,
-      "length": 9,
-      "value": "\"warning\""
     }
   ]
 }

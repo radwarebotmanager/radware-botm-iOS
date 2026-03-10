@@ -1,21 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ShieldSquare
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ShieldSquare
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CoreMotion
 import CoreTelephony
 import CryptoKit
-import DeveloperToolsSupport
 import DeviceCheck
 import ExternalAccessory
 import Foundation
 import MessageUI
 @_exported import ShieldSquare
 import Swift
-import SwiftUI
 import SystemConfiguration
 import UIKit
 import WebKit
@@ -53,7 +51,9 @@ public enum SSDeviceType : Swift.String {
   case iPadMini4
   case iPadPro
   case simulator
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -69,7 +69,9 @@ public enum SSDeviceSize : Swift.String {
   case screen9Dot7Inches
   case screen12Dot9Inches
   case screen10Dot5Inches
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -80,7 +82,9 @@ public enum SSDeviceConnectivity : Swift.String {
   case wiFi
   case wiFi3G
   case wiFi4G
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -160,7 +164,9 @@ public enum LMBatteryState : Swift.Int {
   case unplugged
   case charging
   case full
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -197,41 +203,63 @@ public struct SSDeviceInfo {
       public static var currentCountry: Swift.String {
         get
       }
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var currentCurrency: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var currentCurrencySymbol: Swift.String? {
         get
       }
+      #endif
       public static var usesMetricSystem: Swift.Bool {
         get
       }
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var decimalSeparator: Swift.String? {
         get
       }
+      #endif
     }
     public struct Carrier {
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var name: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var ISOCountryCode: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var mobileCountryCode: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       @available(*, deprecated, message: "Use mobileNetworkCode instead")
       public static var networkCountryCode: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var mobileNetworkCode: Swift.String? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var allowsVOIP: Swift.Bool? {
         get
       }
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func checkCallSupport() -> Swift.Bool?
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public static func checkSmsSupport() -> Swift.Bool?
+      #endif
     }
     public struct Hardware {
       public static var deviceModel: Swift.String {
@@ -284,9 +312,11 @@ public struct SSDeviceInfo {
         public static var current: ShieldSquare.SSDevice {
           get
         }
+        #if compiler(>=5.3) && $NonescapableTypes
         public static var identifierForVendor: Swift.String? {
           get
         }
+        #endif
         public static var orientation: UIKit.UIDeviceOrientation {
           get
         }
@@ -307,9 +337,11 @@ public struct SSDeviceInfo {
       }
     }
     public struct Battery {
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var level: Swift.Float? {
         get
       }
+      #endif
       public static var state: ShieldSquare.LMBatteryState {
         get
       }
@@ -324,9 +356,11 @@ public struct SSDeviceInfo {
       public static var completeAppVersion: Swift.String {
         get
       }
+      #if compiler(>=5.3) && $NonescapableTypes
       public static var clipboardString: Swift.String? {
         get
       }
+      #endif
     }
     public struct SDK {
       public static var version: Swift.String {
@@ -351,7 +385,9 @@ public enum HTTPMethod : Swift.String {
   case delete
   case trace
   case connect
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -359,7 +395,9 @@ public enum HTTPMethod : Swift.String {
 }
 public enum ResponseCodes : Swift.Int {
   case Success, Failed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -375,10 +413,18 @@ public enum ResponseCodes : Swift.Int {
 extension ShieldSquare.SSURLProtocol : Foundation.URLSessionDataDelegate {
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive data: Foundation.Data)
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, dataTask: Foundation.URLSessionDataTask, didReceive response: Foundation.URLResponse, completionHandler: @escaping (Foundation.URLSession.ResponseDisposition) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didCompleteWithError error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, didBecomeInvalidWithError error: (any Swift.Error)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  #endif
   @objc dynamic public func urlSessionDidFinishEvents(forBackgroundURLSession session: Foundation.URLSession)
 }
 infix operator <<< : BitwiseShiftPrecedence
@@ -414,8 +460,12 @@ public class SSReachability {
     get
   }
   required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability)
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?(hostname: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init?()
+  #endif
   @objc deinit
 }
 extension ShieldSquare.SSReachability {
@@ -479,9 +529,15 @@ public enum SSReCaptchaError : Swift.Error, Swift.CustomStringConvertible {
   @_Concurrency.MainActor @preconcurrency public var contentView: UIKit.UIView? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(contentController: UIKit.UIViewController, position: ShieldSquare.PopupViewController.PopupPosition = .center(nil), popupWidth: CoreFoundation.CGFloat? = nil, popupHeight: CoreFoundation.CGFloat? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(contentView: UIKit.UIView, position: ShieldSquare.PopupViewController.PopupPosition = .center(nil), popupWidth: CoreFoundation.CGFloat? = nil, popupHeight: CoreFoundation.CGFloat? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
@@ -491,7 +547,9 @@ extension ShieldSquare.PopupViewController : UIKit.UIGestureRecognizerDelegate {
 @_hasMissingDesignatedInitializers public class ThreadSignaling {
   public static let shared: ShieldSquare.ThreadSignaling
   public func threadWait()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func threadWaitContext() -> Swift.String?
+  #endif
   public func notifyAllThread()
   public func notifyAllThreadContext(context: Swift.String)
   @objc deinit
@@ -506,12 +564,14 @@ extension ShieldSquare.PopupViewController : UIKit.UIGestureRecognizerDelegate {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(apiKey: Swift.String? = nil, baseURL: Foundation.URL? = nil, endpoint: ShieldSquare.SSReCaptcha.Endpoint = .default, locale: Foundation.Locale? = nil) throws
+  #endif
   public func validate(on view: UIKit.UIView, resetOnError: Swift.Bool = false, completion: @escaping (ShieldSquare.SSReCaptchaResult) -> Swift.Void)
   public func stop()
   public func configureWebView(_ configure: @escaping (WebKit.WKWebView) -> Swift.Void)
   public func reset()
-  public func didFinishLoading(_ closure: @escaping (() -> Swift.Void))
+  public func didFinishLoading(_ closure: @escaping () -> Swift.Void)
   @objc deinit
 }
 public struct SSEventType {
@@ -524,29 +584,45 @@ public struct SSEventType {
     public static let sstextcaptcha: Swift.Int
     public static let ssrecaptcha: Swift.Int
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setup(keyWindow: UIKit.UIWindow? = nil, verifyViewType: Swift.Int)
+  #endif
   @objc public static func setup(verifyViewType: Swift.Int, configuration: ShieldSquare.ShieldConfiguration)
   @objc public static func setup(verifyViewType: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func setup(keyWindow: UIKit.UIWindow? = nil, verifyViewType: Swift.Int = ShieldEngine.SSCaptchaViewType.sscheckboxcaptcha, configuration: ShieldSquare.ShieldConfiguration? = nil)
+  #endif
   @objc public static func enableSSLogs(enableLogs: Swift.Bool = false)
   @objc public static func setUserId(userId: Swift.String)
   public static func makeCalltypeFive()
   public static func makeCalltypeEight()
   public func getBlockDigestID() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getContactEmail() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func trackEvents(eventName: Swift.String?, screenName: Swift.String? = "", eventParams: [Swift.String : Any]? = [:])
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func trackBot(httpResponseObject: Foundation.HTTPURLResponse?)
+  #endif
   public static func setLastRequestedURL(url: Swift.String)
   public static func getLastRequestedURL(key: Swift.String) -> Swift.String
   public static func setEventsTrackingEnabled(enable: Swift.Bool)
   public static func setPostUrl(apiUrl: Swift.String)
   public static func getHeader(fromKey: Swift.String, timestamp: Swift.Int64 = 0) -> Swift.String
   public static func getUnixTimeStamp() -> Swift.Int64
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getValueFromCookie(domain: Swift.String?, key: Swift.String) -> Swift.String
+  #endif
   @objc public static func getApiHeaders(requestUrl: Swift.String) -> [Swift.String : Swift.String]
   @objc public static func getApiCookieToken(requestUrl: Swift.String) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func logShieldEvents(resultObject: Foundation.HTTPURLResponse?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func logDebugValues(message: Swift.String?, items: Any?)
+  #endif
   public static func getLastCaptchaSolveTime() -> Swift.Int
   public static func setLastCapthaSolveTime()
   @objc override dynamic public init()

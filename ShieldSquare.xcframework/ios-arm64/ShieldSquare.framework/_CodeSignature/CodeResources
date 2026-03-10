@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		LZ85Ubl91PHb6EqyrWzS4LY2eQg=
-		</data>
 		<key>Headers/ShieldSquare-Swift.h</key>
 		<data>
-		SVGPRSLlpqIcgbxk4rmaC+BMNEI=
+		PLviT0M3luSwezEfGY5e+ShSLVs=
 		</data>
 		<key>Headers/ShieldSquare.h</key>
 		<data>
@@ -18,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Lj8oVUed5AQMFvLQfsNCrkx8+98=
+		PPD/Sxk3suatb0tW3zkxLdITkOU=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		HovQB2rUVgD+7GLQte3ty/NFcD4=
+		O5hLaF3sut9GK51YjBbQ7lZJQW0=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		3oiSfubtHfpeBsSb5PeEfKNIS78=
+		XT/PeEEfwoWLOK+EdlrYw0tVTdc=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lb53TZYt8kfQDemM8MLpDE5bDI8=
+		3qjdlEVzMUQhTEpGxxrdB7pt//8=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		3oiSfubtHfpeBsSb5PeEfKNIS78=
+		XT/PeEEfwoWLOK+EdlrYw0tVTdc=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OogQZWWKgZI7nlYLX9wMkDdiVCg=
+		NpNU9Yfk8M00Il+UQpPpVAwN/+s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,18 +67,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			unY/GEadBo5Z62vCMWjZOJd8CHVfUQKbSgO2QS4u1YI=
-			</data>
-		</dict>
 		<key>Headers/ShieldSquare-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WXBNcsO/MpH/Jvfk1340HgUFMvbWlEeox87+rdYsYs4=
+			4gIgYOTWlUrQf+a1cOtexQJB/gO8rvXYckxPyBTnL9E=
 			</data>
 		</dict>
 		<key>Headers/ShieldSquare.h</key>
@@ -96,35 +85,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C0AQQgCsHg3WivAtn4LdahiTIE1qRVrg2NtBhCeq2R8=
+			VS5iMaA/VMraZx+ePrmK96jJnEngw1Fj7UZiMzhBq3I=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q4OmXuAzElfFeW0p8aRXPf4YuZqy4QYuSObu9DomDh4=
+			7xaKeDgTE6yO2A1YYMtG8ef7TiSI/OfSIjYomODsDoI=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XIq+U7Z+G8AigIP49nBKbmPTNjwOi/CwFUSe4JvttXc=
+			bArXQI4V+sKolLSE/iNhUFo9eoguoH2A3y8fi/PQZEw=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q4OmXuAzElfFeW0p8aRXPf4YuZqy4QYuSObu9DomDh4=
+			7xaKeDgTE6yO2A1YYMtG8ef7TiSI/OfSIjYomODsDoI=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j2DYbB9h829Cv26su3Dc8n2re2w7omg69hbL7jUWJrk=
+			MDAj5STRvXdIVgcISz+4SX+rERIWjapC9m8PtqnX7fE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
