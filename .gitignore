@@ -1,0 +1,99 @@
+# =========================
+# Xcode
+# =========================
+
+# User-specific Xcode settings
+xcuserdata/
+*.xcuserstate
+
+# Xcode project user data
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# Build products
+.build
+build/
+DerivedData/
+
+# Archives
+*.xcarchive
+
+# =========================
+# iOS / macOS
+# =========================
+
+# Finder
+.DS_Store
+
+# Swift generated files
+.build/
+.swiftpm/
+
+# =========================
+# CocoaPods
+# =========================
+
+# Uncomment if Pods should NOT be committed
+Pods/
+
+# CocoaPods generated files
+*.xcworkspace/xcuserdata/
+
+# =========================
+# Swift Package Manager
+# =========================
+
+Package.resolved
+
+# =========================
+# Framework / SDK build output
+# =========================
+
+*.framework
+*.xcframework
+
+# =========================
+# Generated documentation
+# =========================
+
+Documentation/
+docs/_build/
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# =========================
+# Secrets / credentials
+# =========================
+
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.cer
+*.pem
+*.key
+
+# =========================
+# Fastlane
+# =========================
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# =========================
+# Carthage
+# =========================
+
+Carthage/Build/
