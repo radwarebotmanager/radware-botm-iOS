@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ShieldSquare-Swift.h</key>
 		<data>
-		PLviT0M3luSwezEfGY5e+ShSLVs=
+		64LR2h+DiGOCCjHwBCh0/ErSkoo=
 		</data>
 		<key>Headers/ShieldSquare.h</key>
 		<data>
@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PPD/Sxk3suatb0tW3zkxLdITkOU=
+		8pDlNbJx21ngSyCq1S76MwZXSys=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		O5hLaF3sut9GK51YjBbQ7lZJQW0=
+		5BrhB2bOU7m+YU68v0DkcqOwX/Y=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		XT/PeEEfwoWLOK+EdlrYw0tVTdc=
+		Jf4zZ0no2cjy8oO69lioV5NN9j0=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		3qjdlEVzMUQhTEpGxxrdB7pt//8=
+		XBfHSstXY/rhKxYVI951bx4gGXw=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		XT/PeEEfwoWLOK+EdlrYw0tVTdc=
+		Jf4zZ0no2cjy8oO69lioV5NN9j0=
 		</data>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		NpNU9Yfk8M00Il+UQpPpVAwN/+s=
+		Ww7Sucup63r7QDROIj7bcmFo6ME=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		IZeMoDyvC/iLL/vsqcCU32QjB8I=
+		jetEZIw+sK7YJKY8q9Ru/T6ynvM=
 		</data>
 		<key>SSCaptchaContainerViewController.nib</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4gIgYOTWlUrQf+a1cOtexQJB/gO8rvXYckxPyBTnL9E=
+			+W0fBhZFni1qKA8HQcl0NZxbM2pOhqTyiO0ZjyKUulY=
 			</data>
 		</dict>
 		<key>Headers/ShieldSquare.h</key>
@@ -85,42 +85,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VS5iMaA/VMraZx+ePrmK96jJnEngw1Fj7UZiMzhBq3I=
+			M9yk3YvwCFTPv473EgW2QmbCE+HD2RttduT4DZ+lVJs=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7xaKeDgTE6yO2A1YYMtG8ef7TiSI/OfSIjYomODsDoI=
+			rCsPfcRaJ0LrAsw0XetsJOhD84hmEBP3b0DYyK1YMlI=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bArXQI4V+sKolLSE/iNhUFo9eoguoH2A3y8fi/PQZEw=
+			tivyXDN4RAr+jomAw30C3HhwjQf5O4t5ys6rik7RKHo=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7xaKeDgTE6yO2A1YYMtG8ef7TiSI/OfSIjYomODsDoI=
+			rCsPfcRaJ0LrAsw0XetsJOhD84hmEBP3b0DYyK1YMlI=
 			</data>
 		</dict>
 		<key>Modules/ShieldSquare.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MDAj5STRvXdIVgcISz+4SX+rERIWjapC9m8PtqnX7fE=
+			kFegr2GXVuXWHYiKJ9flr0Pju76gxO9jYhrLAKF9mZU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F7qaT6y+kT4fCu/h+CXjIjH+WLlNS4F6KiAM3EJAOBA=
+			84G86hq3JQ+BmAtGj/ONBE4Ch2ei5MWVyZPh1O/W+JA=
 			</data>
 		</dict>
 		<key>SSCaptchaContainerViewController.nib</key>
