@@ -7,5 +7,4 @@ framework module ShieldSquare {
 
 module ShieldSquare.Swift {
   header "ShieldSquare-Swift.h"
-  requires objc
 }
